@@ -34,7 +34,5 @@ foreach ($friends as $key) {
     <input type="text" name="lastname" required>
     <input type="submit">
 </form>
-<?php
-$_POST['firstname'] ="";
-$_POST['lastname'] ="";
+
 
