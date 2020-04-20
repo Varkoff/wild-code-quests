@@ -32,6 +32,7 @@ class Vehicle
 
     public function forward(): string
     {
+
         $this->currentSpeed = 15;
         return "Go !";
     }
