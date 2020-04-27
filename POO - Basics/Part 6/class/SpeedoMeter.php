@@ -6,11 +6,11 @@ class SpeedoMeter
 
     public static function convertToMiles(float $value): ?string
     {
-        return "$value kilomètres = ". $value * self::kmToMiles ." miles.";
+        return "$value kilomètres = ". round($value * self::kmToMiles, 2) ." miles.";
     }
 
     public static function convertToKilometers(float $value): ?string
     {
-        return "$value miles = ". $value / self::kmToMiles." kilomètres";
+        return "$value miles = ". round($value / self::kmToMiles, 2)." kilomètres";
     }
 }
